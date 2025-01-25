@@ -2,16 +2,16 @@
  *  This is a good place to put common test data, project-wide constants, etc.
  */
 
-const URLmoodle = 'http://localhost/';
+const URLmoodle = 'https://sandbox.moodledemo.net/';
 
 const xpaths = {
   homePageWindow: {
-    loginButton: '//*[@id="usernavigation"]/div/div/span/a',
+    loginButton: '/html/body/div[2]/div[3]/div/div[2]/div/section/div/div[1]/div/ul/li/div/div[2]/div/div[1]/div/p[2]/a',
   },
   loginWindow: {
-    userInput: '//*[@id="username"]',
-    passwordInput: '//*[@id="password"]',
-    loginButton: '//*[@id="loginbtn"]'
+    userInput: '/html/body/div[2]/div[2]/div/div/section/div/div/div/div/form[1]/div[1]/input',
+    passwordInput: '/html/body/div[2]/div[2]/div/div/section/div/div/div/div/form[1]/div[2]/div/input',
+    loginButton: '/html/body/div[2]/div[2]/div/div/section/div/div/div/div/form[1]/div[3]/button'
   },
   dashboardWindow: {
     myCoursesButton: '/html/body/div[2]/nav/div/div[1]/nav/ul/li[3]/a',
@@ -29,8 +29,8 @@ const xpaths = {
 
   hideCourseWindow: {
     myCoursesButton: '/html/body/div[2]/nav/div/div[1]/nav/ul/li[3]/a',
-    dotCourseButton: '/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[1]/div/div[2]/div/div/button/i',
-    removeFromViewButton: '//div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[4]'
+    dotCourseButton: '/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[2]/div/div/button/i',
+    removeFromViewButton: '/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[2]/div/div/div/a[4]'
   },
   hiddenCourseVerification: {
     courseList: "//div[contains(@class, 'coursebox')]//div[contains(text(), 'My first course')]"

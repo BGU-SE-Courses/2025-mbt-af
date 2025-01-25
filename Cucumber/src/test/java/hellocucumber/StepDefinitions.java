@@ -100,7 +100,7 @@ public class StepDefinitions {
 
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Initializes a new session and navigates the teacher to the Moodle home page
     @Given("Teacher is on the Home Page")
@@ -134,10 +134,10 @@ public class StepDefinitions {
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("/html/body/div[2]/nav/div/div[1]/nav/ul/li[3]/a")))).click();
 
         //Open course options
-        wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[1]/div/div[2]/div/div/button/i")))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[2]/div/div/button/i")))).click();
 
         //Clicks "Remove from view"
-        wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("//div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/a[4]")))).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By.xpath("/html/body/div[2]/div[3]/div/div[2]/div/section/div/aside/section/div/div/div[1]/div[2]/div/div/div[1]/div/div/div[2]/div/div[2]/div/div/div/a[4]")))).click();
 
     }
 
