@@ -2,31 +2,33 @@
 This is a repository for the system-testing assignment of the Software Quality Engineering course at the [Ben-Gurion University](https://in.bgu.ac.il/), Israel.
 
 ## Assignment Description
-In this assignment, we tested an open-source software called [$$*TODO* software name$$](https://address-of-the-project.com).
+In this assignment, we tested an open-source software called [moodle](https://sandbox.moodledemo.net/).
 
-$$*TODO* Add some general description about the software$$
+Moodle is a widely used open-source learning management system (LMS) designed for delivering online courses and educational content. It offers educators a platform to create, manage, and facilitate interactive courses, assessments, and collaborative activities.
 
 ## Installation
-$$*TODO* Write instructions on how to install the software and prepare the testing environment$$
+1. Visit downloads.moodle.org/windows and download the latest stable version.
+2. Extract the downloaded file.
+3. Click "Start Moodle" to launch the setup.
+4. Follow the on-screen instructions to create the database and set up the first admin user.
+5. Once the setup is complete, click "Stop Moodle".
+6. From this point forward, clicking "Start Moodle" will automatically launch the website.
 
 ## What we tested
-$$*TODO* Add a description of the module and the user stories that you chose to test.
-For example, in the case of the Moodle example, you can write something like this:
+We tested the courses module that allows students to mark as star courses, and for teachers to hide courses.
+We chose to test the following user stories:
 
-We tested the quiz module that allows for creating and taking quizzes. We chose to test the following user stories: 
+*User story:* A student chooses a course he is enrolled to and mark it as star.
 
-*User story:* A teacher adds a new quiz to the course with two yes/no questions
+*Preconditions:* There is a course with a student
+
+*Expected outcome:* The course is marked as star
+
+*User story:* A teacher chooses a course and hides it.
 
 *Preconditions:* There is a course with a teacher
 
-*Expected outcome:* The quiz is added to the course.
-
-*User story:* A students attempts a quiz and answers correctly.
-
-*Preconditions:* There is a course with a quiz with two yes/no questions and the quiz grade is calculated automatically and the grade is visible to the students upon submission.
-
-*Expected outcome:* The student receives 100.
-$$
+*Expected outcome:* The course has been hidden.
 
 ## How we tested
 We used two different testing methods:
@@ -36,17 +38,4 @@ We used two different testing methods:
 Each of the testing methods is elaborated in its own directory. 
 
 ## Results
-Update all README.md files (except for d-e, see Section 1). Specifically, replace all $$*TODO*…$$ according to the instructions inside the $$.
-
-## Detected Bugs
-We detected the following bugs:
-
-1. Bug 1: 
-   1. General description: ...
-   2. Steps to reproduce: ...
-   3. Expected result: ...
-   4. Actual result: ...
-   5. Link to the bug report: (you are encouraged to report the bug to the developers of the software)
-2. Bug 2: ...
-
-$$*TODO* if you did not detect the bug, you should delete this section$$  
+All tests passed successfully. and all README files are updated with the results of the tests.
